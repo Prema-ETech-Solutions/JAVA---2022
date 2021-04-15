@@ -1,0 +1,38 @@
+package calc;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Square_Call extends HttpServlet
+{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5653655655970526784L;
+	static PrintWriter out;
+	public void doGet(HttpServletRequest req , HttpServletResponse res) throws IOException, ServletException
+	{
+		int num1 = Integer.parseInt(req.getParameter("num1"));
+		int num2 = Integer.parseInt(req.getParameter("num2"));
+		String oper =req.getParameter("Operator");
+		out = res.getWriter();
+		if (oper.equals("+")) 
+		{
+			out.println("SUM OF TWO VALUES"+(num1+num2));
+		} 
+		else 
+		{
+			req.setAttribute("num1", num1);
+			req.setAttribute("num2",num2);
+			RequestDispatcher rd = req.getRequestDispatcher("/calling");
+			rd.forward(req, res);
+		}
+	}
+}

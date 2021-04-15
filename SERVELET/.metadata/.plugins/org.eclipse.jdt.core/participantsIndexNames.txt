@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+E:\FUTURE WORK\JAVA 2020\SERVELET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\276962880.index
+\Total\src
+E:\FUTURE WORK\JAVA 2020\SERVELET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2069704829.index
+\JDBC_SERVER\src
+D:\DATA E\FUTURE WORK\JAVA 2020\SERVELET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1681952838.index
+\BASE_SERVER_\src
+D:\DATA E\FUTURE WORK\JAVA 2020\SERVELET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\276962880.index
+\Total\src
+E:\FUTURE WORK\JAVA 2020\SERVELET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1681952838.index
+\BASE_SERVER_\src

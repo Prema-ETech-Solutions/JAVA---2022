@@ -1,0 +1,13 @@
+package calc;
+
+import javax.servlet.http.HttpServlet;
+
+public class Square_Call extends HttpServlet
+{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5653655655970526784L;
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WEB_1_PRA">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="WEB_1_PRA"/>
+        <property name="java-output-path" value="/WEB_1_PRA/build/classes"/>
+    </wb-module>
+</project-modules>

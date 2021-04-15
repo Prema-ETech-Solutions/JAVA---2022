@@ -1,0 +1,33 @@
+package db.mysql.gui;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Orcal_demo
+{
+
+public static void main(String[] args) throws SQLException,Exception
+	
+	{
+		Class.forName("oracle.jdbc.OracleDriver");
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Admin_123");
+		Statement st = (Statement) con.createStatement();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("Enter table name :");
+		String tname= br.readLine();
+		String query = " create table " +tname+ " (ENO number(3) primary key , ENAME varchar2(10),Esal Float(5),EADDR varchar2(10))";
+		
+		st.execute(query);
+		System.out.println("table" + tname +  "is succesfully created");
+	
+		con.close();
+	}
+	
+	
+	
+}

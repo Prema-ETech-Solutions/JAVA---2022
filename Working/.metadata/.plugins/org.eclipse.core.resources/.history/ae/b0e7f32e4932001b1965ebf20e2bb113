@@ -1,0 +1,66 @@
+package db.mysql.gui;
+import java.sql.*;
+public class Db_Class_Mysql 
+{
+	//Default (url,username,password)  
+	private static String url="jdbc:mysql://localhost:3306/java_db?useSSL=false";
+	private static String username="root";
+	private static String password="@123";
+	private static String drivers="com.mysql.jdbc.Driver";
+	
+	//Changing (IP,PORT,DB_NAME,USERNAME,PASSSWORD)
+	public static void Change(String Ip, String Port, String Db_name,String Username,String Password)
+	{
+		if (Ip == null||Port == null|| Db_name == null||Username == null||Password==null) 
+		{
+			
+		}
+		else 
+		{
+			url = "jdbc:mysql://"+Ip+":"+Port+"/"+Db_name+"?useSSL=false";
+			username = Username;
+			password=Password;
+		}
+	}
+	
+	//Changing (IP,PORT,DB_NAME,USERNAME,PASSSWORD,DRIVERS)
+	public static void Change(String Ip, String Port, String Db_name,String Username,String Password,String Drivers)
+	{
+		if (Ip == null||Port == null|| Db_name == null||Username == null||Password==null||Drivers == null) 
+		{
+			
+		} 
+		else 
+		{
+			url = "jdbc:mysql://"+Ip+":"+Port+"/"+Db_name;
+			username = Username;
+			password=Password;
+			drivers = Drivers;
+		}	
+	}
+	//TESTING A CONNECTION WITH DATABASE 
+	public static Connection Get_Connection() 
+	{
+		try 
+		{
+			Class.forName(drivers);
+		Connection	con =DriverManager.getConnection(url, username, password);
+			return con;
+		}
+		catch(Exception e)
+		{
+			//System.out.println(e);
+			return null;
+			
+		}
+		
+	}
+	
+	public static void Create()
+	{
+		
+		
+	}
+	
+
+}

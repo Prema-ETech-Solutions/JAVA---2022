@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+D:\DATA E\FUTURE WORK\JAVA 2020\SERVELET\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+276962880.index
+4193199513.index
+1165299558.index
+256004200.index

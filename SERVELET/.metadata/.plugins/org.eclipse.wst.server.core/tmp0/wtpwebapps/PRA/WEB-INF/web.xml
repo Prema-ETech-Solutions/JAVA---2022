@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>PRA</display-name>
+
+	<servlet>
+		<servlet-name>F</servlet-name>
+		<servlet-class>f1.First_serverlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>S</servlet-name>
+		<servlet-class>f1.Second_Serverlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>T</servlet-name>
+	<servlet-class>f1.Third_Serverlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>Forth</servlet-name>
+	<servlet-class>f1.Four_serverlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>F</servlet-name>
+		<url-pattern>/first</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>S</servlet-name>
+		<url-pattern>/Gen_</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>T</servlet-name>
+	<url-pattern>/Http_</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>Forth</servlet-name>
+	<url-pattern>/savedata</url-pattern>
+	</servlet-mapping>
+</web-app>

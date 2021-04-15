@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>First JSP PAGE</title>
+</head>
+<body>
+	<h1>HELLO WORLD</h1>
+	<p>
+		<%!int a = 1100,b=10000;
+	String N1 = "A";
+
+	public int add() 
+	{
+		return a+b;
+	}
+	public String value()
+	{
+		return N1;
+	}
+	%>
+	</p>
+	<h1>
+	<%
+	out.println(add());
+	out.println("<br>");
+	out.println(value());
+	%>
+	</h1>
+</body>
+</html>

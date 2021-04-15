@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>First PAGE</title>
+</head>
+<body>
+	<!-- ONLY FORM -->
+	<h1>FORMS</h1>
+	<form action="sum">
+		<div>
+			<label for="num_1">NUMBER_1</label>
+			<br>
+			<input type="number" name="num1"
+				id="num_1">
+		</div>
+
+		<div>
+			<label for="num_2">NUMBER_2</label>
+			<br>
+			 <input type="number" name="num2"
+				id="num_2">
+		</div>
+		<div>
+			<input type="Submit"> <input type="reset">
+		</div>
+	</form>
+	<br>
+	<br>
+	<hr>
+	<hr>
+	<br>
+	<!-- FORM + GET METHOD -->
+	<h1>FORM GET METHOD</h1>
+	<form action="sumget" method="get">
+		
+		<div>
+			<label for="num_1_get">NUMBER_1</label><br>
+			<input type="number" name="num1" id ="num_1_get">
+		</div>
+		<div>
+			<label for="num_2_get">NUMBER_2</label><br>
+			<input type="number" name="num2" id="num_2_get">
+		</div>
+		<div>
+			<input type="submit"> <input type="reset">
+		</div>
+	</form>
+	<br><br><hr><hr><br>
+	<h1>FORM POST METHOD</h1>
+	<form action="sumpost" method="post">
+		<div>
+			<label for="num_1_post">NUMBER_1</label><br>
+			<input type="number" name = "num_1" id="num_1_post">
+		</div>
+		<div>
+			 <label for="">NUMBER_2</label><br>
+			 <input type="number" name = "num_2" id="num_2_post">
+		</div>
+		<div>  
+			<input type="submit">
+			<input type="reset">
+		</div>
+		
+	</form>
+	
+
+</body>
+</html>

@@ -1,6 +1,5 @@
 package gui_Solve_1;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -11,10 +10,13 @@ import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 
 public class Rbtn extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	JRadioButton R4 = new JRadioButton("R4");
 	JRadioButton R3 = new JRadioButton("R3");

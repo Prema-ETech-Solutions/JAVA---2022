@@ -12,14 +12,10 @@ public class Inheritance_7 extends Second_7 {
 	
 	public static void main(String[] args)
 	{
-		//now making object of Inheritance_7
-		Inheritance_7 obj = new Inheritance_7();
-		//now obj can access the data function and attributes of Second_7.java class
-		
-		System.out.println("VALUE OF A IS = "+obj.a);
-		obj.a = 11000;
-		System.out.println("VALUE OF A IS = "+obj.a);
-		obj.sum();
+		System.out.println("VALUE OF A IS = "+a);
+		a = 11000;
+		System.out.println("VALUE OF A IS = "+a);
+		sum();
 
 	}
 

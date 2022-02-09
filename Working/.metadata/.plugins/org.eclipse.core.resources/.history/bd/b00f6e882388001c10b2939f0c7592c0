@@ -1,0 +1,16 @@
+package itextpdf_Program;
+
+import java.io.FileNotFoundException;
+
+import com.itextpdf.kernel.pdf.PdfWriter;
+
+public class How_To_Create_01 {
+
+	public static void main(String[] args) throws FileNotFoundException 
+	{
+		String Path = "First.pdf";
+		PdfWriter  name = new PdfWriter(Path);
+		
+	}
+
+}

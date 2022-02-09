@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sun.security.krb5.SCDynamicStoreConfig"/>
-    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEW"/>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
-    <fullyQualifiedTypeName name="database.mysql.Select_Statement_4"/>
-    <fullyQualifiedTypeName name="database.mysql.Create_Table_Stament_2"/>
-    <fullyQualifiedTypeName name="java.sql.BatchUpdateException"/>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.resources.compiler"/>
-    <fullyQualifiedTypeName name="gui_Solve_1.Placeholder"/>
     <fullyQualifiedTypeName name="com.placeholder.PlaceHolder"/>
     <fullyQualifiedTypeName name="com.sun.tools.classfile.StackMap_attribute.stack_map_frame"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
@@ -19,8 +11,6 @@
     <fullyQualifiedTypeName name="javax.swing.filechooser.FileNameExtensionFilter"/>
     <fullyQualifiedTypeName name="gui_Solve_1.FileTypeFilter_8"/>
     <fullyQualifiedTypeName name="java.io.FileFilter"/>
-    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
-    <fullyQualifiedTypeName name="java.awt.Image"/>
     <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
     <fullyQualifiedTypeName name="java.awt.Component"/>
     <fullyQualifiedTypeName name="java.awt.peer.LabelPeer"/>
@@ -55,9 +45,19 @@
     <fullyQualifiedTypeName name="javax.swing.table.JTableHeader"/>
     <fullyQualifiedTypeName name="javax.swing.table.TableColumn"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.sql.Time"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="sun.security.util.DisabledAlgorithmConstraints"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="com.itextpdf.kernel.pdf.PdfWriter"/>
+    <fullyQualifiedTypeName name="com.itextpdf.kernel.pdf.PdfDocument"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.element.Paragraph"/>
+    <fullyQualifiedTypeName name="com.itextpdf.io.image.ImageData"/>
+    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+    <fullyQualifiedTypeName name="com.itextpdf.io.image.ImageDataFactory"/>
+    <fullyQualifiedTypeName name="java.awt.Image"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.element.Image"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.element.List"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.Document"/>
 </qualifiedTypeNameHistroy>

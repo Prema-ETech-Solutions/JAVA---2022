@@ -1,0 +1,35 @@
+package itextpdf_Program;
+
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
+
+import javax.imageio.ImageIO;
+import com.itextpdf.layout.element.Image;
+
+import com.itextpdf.io.image.ImageData;
+import com.itextpdf.io.image.ImageDataFactory;
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.Document;
+
+public class How_To_Add_Image_03 {
+
+	public static void main(String[] args) throws FileNotFoundException, MalformedURLException 
+	{
+		String Path = "Third.pdf",
+				imgPath ="IMG\\nature.jpg";
+		ImageData data = ImageDataFactory.create(imgPath); 
+		Image Img = new Image(data);
+		PdfWriter  Write = new PdfWriter(Path);
+		PdfDocument PdfDoc = new PdfDocument(Write);
+		PdfDoc.addNewPage();
+		Document Doc = new Document(PdfDoc);
+		Img.setFixedPosition(50, 20); 
+		Img.getScaledInstance(40,50, Img.SCALE_SMOOTH)
+		Doc.add(Img); 
+		Doc.close();
+		System.out.println("PDF CREATED");
+
+	}
+
+}

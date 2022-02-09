@@ -38,7 +38,7 @@ public class Bill_Base {
 		Table ctable = new Table(colWidth);
 		ctable.addCell(new Cell(0, 4).add("C table").setBold());
 		ctable.addCell(new Cell().add("NAME").setBorder(Border.NO_BORDER));
-		ctable.addCell(new Cell().add("RAJ").setBorder(Border.NO_BORDER));
+		ctable.addCell(new Cell().add("RAJ").setBorder(Border.NO_BORDER).setTextAlignment(TextAlignment.LEFT));
 		ctable.addCell(new Cell().add("INVOICE No. ").setBorder(Border.NO_BORDER));
 		ctable.addCell(new Cell().add("123").setBorder(Border.NO_BORDER));
 		ctable.addCell(new Cell().add("Mo.No").setBorder(Border.NO_BORDER));

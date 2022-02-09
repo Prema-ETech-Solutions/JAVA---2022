@@ -1,0 +1,29 @@
+package itextpdf_Program;
+
+import java.awt.Image;
+import java.io.FileNotFoundException;
+
+import javax.imageio.ImageIO;
+
+import com.itextpdf.io.image.ImageData;
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.Document;
+
+public class How_To_Add_Image_03 {
+
+	public static void main(String[] args) throws FileNotFoundException 
+	{
+		String Path = "Third.pdf",
+				imgPath ="IMG\\nature.jpg";
+		ImageData data = ImageDataFactory.create(imgPath); 
+		PdfWriter  Write = new PdfWriter(Path);
+		PdfDocument PdfDoc = new PdfDocument(Write);
+		PdfDoc.addNewPage();
+		Document Doc = new Document(PdfDoc);
+		Doc.close();
+		System.out.println("PDF CREATED");
+
+	}
+
+}

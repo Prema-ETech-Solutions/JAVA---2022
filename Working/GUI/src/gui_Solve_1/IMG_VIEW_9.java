@@ -81,11 +81,12 @@ public class IMG_VIEW_9 extends JFrame {
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGap(6)
-					.addComponent(lb, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+					.addComponent(lb, GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
 					.addGap(146)
 					.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 85, GroupLayout.PREFERRED_SIZE))
 		);
 		contentPane.setLayout(gl_contentPane);
+		
 		
 		
 	}

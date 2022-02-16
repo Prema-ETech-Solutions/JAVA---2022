@@ -1,0 +1,41 @@
+package itextpdf_Program;
+
+public class How_To_Create_Nested_Tables_14 {
+
+	public static void main(String[] args) 
+	{
+		String Path = "Nine.pdf";
+		PdfWriter  Write = new PdfWriter(Path);
+		PdfDocument PdfDoc = new PdfDocument(Write);
+		PdfDoc.addNewPage();
+		Document Doc = new Document(PdfDoc);
+		
+		float[] Coloum = {200f,50f,150f};
+		Table table = new Table(Coloum);
+		
+		Cell cell_01 = new Cell();
+		cell_01.add("D1");
+		table.addCell(cell_01);
+		table.addCell(new Cell().add("D2"));
+		table.addCell(new Cell().add("D3"));
+		
+		table.addCell(new Cell().add("D1"));
+		table.addCell(new Cell().add("D2"));
+		table.addCell(new Cell().add("D3"));
+		
+		table.addCell(new Cell().add("D1"));
+		table.addCell(new Cell().add("D2"));
+		table.addCell(new Cell().add("D3"));
+		
+		table.addCell(new Cell().add("D1"));
+		table.addCell(new Cell().add("D2"));
+		table.addCell(new Cell().add("D3"));
+		
+		
+		Doc.add(table);
+		Doc.close();
+		System.out.println("PDF CREATED");
+
+	}
+
+}

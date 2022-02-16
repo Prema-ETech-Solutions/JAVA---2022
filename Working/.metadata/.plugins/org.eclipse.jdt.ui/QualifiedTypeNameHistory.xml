@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.Component"/>
     <fullyQualifiedTypeName name="java.awt.peer.LabelPeer"/>
     <fullyQualifiedTypeName name="database.mysql.gui.Mysql_db"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.utilities.CPPExpressions.StaticFieldExpr"/>
@@ -41,7 +40,6 @@
     <fullyQualifiedTypeName name="com.itextpdf.io.image.ImageDataFactory"/>
     <fullyQualifiedTypeName name="java.awt.Image"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.element.Image"/>
-    <fullyQualifiedTypeName name="com.itextpdf.layout.element.List"/>
     <fullyQualifiedTypeName name="com.itextpdf.kernel.font.PdfFont"/>
     <fullyQualifiedTypeName name="com.itextpdf.kernel.font.PdfFontFactory"/>
     <fullyQualifiedTypeName name="com.itextpdf.io.font.FontConstants"/>
@@ -49,15 +47,17 @@
     <fullyQualifiedTypeName name="com.itextpdf.layout.Style"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.element.Paragraph"/>
     <fullyQualifiedTypeName name="java.lang.Float"/>
+    <fullyQualifiedTypeName name="com.itextpdf.kernel.color.Color"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.border.Border3D"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.border.Border"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.border.GrooveBorder"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.border.DottedBorder"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.itextpdf.kernel.pdf.PdfWriter"/>
     <fullyQualifiedTypeName name="com.itextpdf.kernel.pdf.PdfDocument"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.Document"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.element.Table"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.element.Cell"/>
-    <fullyQualifiedTypeName name="com.itextpdf.kernel.color.Color"/>
-    <fullyQualifiedTypeName name="com.itextpdf.layout.border.Border3D"/>
-    <fullyQualifiedTypeName name="com.itextpdf.layout.border.Border"/>
-    <fullyQualifiedTypeName name="com.itextpdf.layout.border.GrooveBorder"/>
-    <fullyQualifiedTypeName name="com.itextpdf.layout.border.DottedBorder"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.itextpdf.layout.element.List"/>
 </qualifiedTypeNameHistroy>

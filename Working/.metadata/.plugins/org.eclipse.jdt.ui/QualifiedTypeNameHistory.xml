@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="database.mysql.gui.Mysql_db"/>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.utilities.CPPExpressions.StaticFieldExpr"/>
-    <fullyQualifiedTypeName name="com.sun.media.sound.ModelAbstractChannelMixer"/>
-    <fullyQualifiedTypeName name="javax.swing.table.DefaultTableModel"/>
-    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.jaxp.validation.ErrorHandlerAdaptor"/>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="javax.management.Query"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.lang.Double"/>
-    <fullyQualifiedTypeName name="java.awt.Font"/>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.code.NMethod"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
@@ -50,7 +37,6 @@
     <fullyQualifiedTypeName name="com.itextpdf.layout.border.Border"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.border.GrooveBorder"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.border.DottedBorder"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.element.Table"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.element.Cell"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -60,4 +46,18 @@
     <fullyQualifiedTypeName name="com.itextpdf.kernel.pdf.PdfDocument"/>
     <fullyQualifiedTypeName name="com.itextpdf.kernel.geom.PageSize"/>
     <fullyQualifiedTypeName name="com.itextpdf.layout.Document"/>
+    <fullyQualifiedTypeName name="java.security.Signature"/>
+    <fullyQualifiedTypeName name="java.security.KeyPair"/>
+    <fullyQualifiedTypeName name="javax.crypto.Cipher"/>
+    <fullyQualifiedTypeName name="java.security.KeyPairGenerator"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.OutputDeviceAssigned"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="java.awt.Font"/>
+    <fullyQualifiedTypeName name="javax.swing.border.EmptyBorder"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
 </qualifiedTypeNameHistroy>

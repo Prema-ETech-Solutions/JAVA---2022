@@ -1,7 +1,0 @@
-package calc;
-
-import javax.servlet.http.HttpServlet;
-
-public class Sum_Get extends HttpServlet {
-
-}

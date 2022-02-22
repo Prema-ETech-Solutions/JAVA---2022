@@ -1,8 +1,0 @@
-package calc;
-
-import javax.servlet.http.HttpServlet;
-
-public class Square_Call extends HttpServlet
-{
-
-}

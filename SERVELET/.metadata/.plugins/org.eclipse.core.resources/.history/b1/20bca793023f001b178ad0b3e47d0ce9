@@ -1,7 +1,0 @@
-package calc;
-
-import javax.servlet.http.HttpServlet;
-
-public class Cookies_call extends HttpServlet {
-
-}

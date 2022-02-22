@@ -19,9 +19,9 @@ public class How_To_Add_Water_mark_20 {
 		PdfDocument PdfDoc = new PdfDocument(Write);
 		ImageData data = ImageDataFactory.create("IMG\\nature.jpg"); 
 		Image Img = new Image(data);
-		Img.setHeight(200);
-		Img.setWidth(200);
-		Img.setFixedPosition(PdfDoc.getDefaultPageSize().getWidth()/2-100,PdfDoc.getDefaultPageSize().getWidth()/2-100);
+		Img.setHeight(2.13f);
+		Img.setWidth(1.07f);
+		Img.setFixedPosition(PdfDoc.getDefaultPageSize().getWidth()/2-320,PdfDoc.getDefaultPageSize().getWidth()/2-160);
 		Img.setOpacity(0.3f);
 		
 		PdfDoc.addNewPage();

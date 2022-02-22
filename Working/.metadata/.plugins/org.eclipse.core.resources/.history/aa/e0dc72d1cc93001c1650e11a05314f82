@@ -1,0 +1,178 @@
+package gui_Solve_1;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import javax.swing.JButton;
+import javax.swing.SwingConstants;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidKeyException;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
+
+public class Encrypting_Decrypting_10 extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField textField;
+	JLabel OUTPUT = new JLabel("");
+	JLabel OUTPUT_ = new JLabel("");
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Encrypting_Decrypting_10 frame = new Encrypting_Decrypting_10();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Encrypting_Decrypting_10() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 766, 462);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("ENTER STTRING");
+		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 19));
+		lblNewLabel.setBounds(10, 25, 213, 66);
+		contentPane.add(lblNewLabel);
+
+		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.BOLD, 11));
+		textField.setBounds(233, 25, 378, 66);
+		contentPane.add(textField);
+		textField.setColumns(10);
+
+		JButton btnNewButton = new JButton("ENCRYPT");
+		btnNewButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				String str = textField.getText();
+
+				ENCRYPT(str);
+
+			}
+		});
+		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 17));
+		btnNewButton.setBounds(621, 21, 119, 70);
+		contentPane.add(btnNewButton);
+
+		OUTPUT.setHorizontalAlignment(SwingConstants.CENTER);
+		OUTPUT.setBounds(20, 100, 701, 188);
+		contentPane.add(OUTPUT);
+
+		OUTPUT_.setHorizontalAlignment(SwingConstants.CENTER);
+		OUTPUT_.setFont(new Font("Times New Roman", Font.BOLD, 19));
+		OUTPUT_.setBounds(10, 346, 601, 66);
+		contentPane.add(OUTPUT_);
+
+		JButton btnDecrypt = new JButton("DECRYPT");
+		btnDecrypt.setFont(new Font("Times New Roman", Font.BOLD, 17));
+		btnDecrypt.setBounds(621, 342, 119, 70);
+		contentPane.add(btnDecrypt);
+	}
+
+	public void ENCRYPT(String Str) {
+		// Creating KeyPair generator object
+		KeyPairGenerator keyPairGen = null;
+		try {
+			keyPairGen = KeyPairGenerator.getInstance("RSA");
+		} catch (NoSuchAlgorithmException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		// Initializing the key pair generator
+		keyPairGen.initialize(2048);
+
+		// Generate the pair of keys
+		KeyPair pair = keyPairGen.generateKeyPair();
+
+		// Getting the public key from the key pair
+		PublicKey publicKey = pair.getPublic();
+
+		// Creating a Cipher object
+		Cipher cipher = null;
+		try {
+			cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+		} catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// Initializing a Cipher object
+		try {
+			cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+		} catch (InvalidKeyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// Add data to the cipher
+		byte[] input = Str.getBytes();
+		cipher.update(input);
+
+		// encrypting the data
+		byte[] cipherText = null;
+		try {
+			cipherText = cipher.doFinal();
+		} catch (IllegalBlockSizeException | BadPaddingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			OUTPUT.setText(new String(cipherText, "UTF8"));
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void DECRYPT() {
+		Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+		KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
+		KeyPair pair = keyPairGen.generateKeyPair();
+		// Initializing the same cipher for decryption
+		cipher.init(Cipher.DECRYPT_MODE, pair.getPrivate());
+
+		// Add data to the cipher
+		byte[] input = "Welcome to Tutorialspoint".getBytes();
+		cipher.update(input);
+		
+		 byte[] cipherText = cipher.doFinal();	
+		
+		
+		// Decrypting the text
+		byte[] decipheredText = cipher.doFinal(cipherText);
+		System.out.println(new String(decipheredText));
+	}
+}

@@ -1,5 +1,0 @@
-INDEX VERSION 1.131+D:\DATA E\FUTURE WORK\JAVA 2020\SERVELET\.metadata\.plugins\org.eclipse.jdt.core
-256004200.index
-1165299558.index
-4193199513.index
-4282667987.index

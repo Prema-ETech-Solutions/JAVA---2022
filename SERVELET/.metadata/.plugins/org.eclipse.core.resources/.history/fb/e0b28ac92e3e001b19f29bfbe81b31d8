@@ -1,9 +1,0 @@
-package calc;
-
-import javax.servlet.http.HttpServlet;
-
-public class Session_Call extends HttpServlet
-{
-	
-
-}

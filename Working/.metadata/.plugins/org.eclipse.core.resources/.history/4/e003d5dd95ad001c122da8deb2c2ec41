@@ -1,0 +1,266 @@
+package gui_Solve_1;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import cryptography.*;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JButton;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Encryption_Decryption extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField Output;
+	private JTextField Input_txt;
+	private JTextField encryption;
+	static boolean T1_= false,T2_= false,T3_= false,T4_= false;
+	static boolean T1_1_= false,T2_1_= false,T3_1_= false,T4_1_= false;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Encryption_Decryption frame = new Encryption_Decryption();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Encryption_Decryption() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 644, 299);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		Input_txt = new JTextField();
+		Input_txt.setBounds(169, 11, 168, 58);
+		contentPane.add(Input_txt);
+		Input_txt.setColumns(10);
+		
+		Output = new JTextField();
+		Output.setColumns(10);
+		Output.setBounds(170, 146, 168, 58);
+		contentPane.add(Output);
+		
+		encryption = new JTextField();
+		encryption.setColumns(10);
+		encryption.setBounds(169, 80, 168, 58);
+		contentPane.add(encryption);
+		
+		JLabel lblNewLabel = new JLabel("INPUT TXT");
+		lblNewLabel.setFont(new Font("Segoe UI Variable", Font.BOLD, 20));
+		lblNewLabel.setForeground(Color.BLACK);
+		lblNewLabel.setBounds(10, 11, 149, 58);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblEncryptedTxt = new JLabel("ENCRYPTED TXT");
+		lblEncryptedTxt.setForeground(Color.BLACK);
+		lblEncryptedTxt.setFont(new Font("Segoe UI Variable", Font.BOLD, 18));
+		lblEncryptedTxt.setBounds(10, 80, 149, 58);
+		contentPane.add(lblEncryptedTxt);
+		
+		JLabel lblPlainTxt = new JLabel("PLAIN TXT");
+		lblPlainTxt.setForeground(Color.BLACK);
+		lblPlainTxt.setFont(new Font("Segoe UI Variable", Font.BOLD, 18));
+		lblPlainTxt.setBounds(10, 149, 149, 58);
+		contentPane.add(lblPlainTxt);
+		
+		JButton T4 = new JButton("Encrypt 4");
+		T4.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (T4_) 
+				{
+					
+				}
+				else 
+				{
+					
+				}
+				
+			}
+		});
+		T4.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T4.setBounds(341, 203, 147, 58);
+		contentPane.add(T4);
+		
+		JButton T3 = new JButton("Encrypt 3");
+		T3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				if (T3_) 
+				{
+					
+				}
+				else 
+				{
+					
+				}
+			}
+		});
+		T3.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T3.setBounds(340, 144, 148, 58);
+		contentPane.add(T3);
+		
+		JButton T1 = new JButton("Encrypt 1 ");
+		T1.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				if (T1_) 
+				{
+					
+				}
+				else 
+				{
+					final String secretKey = "ssshhhhhhhhhhh!!!!";
+					String dataString = AES.encrypt(Input_txt.getText(), secretKey);
+					
+				}
+				
+				
+			}
+		});
+		T1.setBounds(340, 12, 148, 58);
+		contentPane.add(T1);
+		
+		JButton Clear_ = new JButton("CLEAR");
+		Clear_.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				T1_= false;
+				T2_= false;
+				T3_= false;
+				T4_= false;
+				T1_1_= false;
+				T2_1_= false;
+				T3_1_= false;
+				T4_1_= false;
+			}
+		});
+		Clear_.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		Clear_.setBounds(239, 206, 100, 55);
+		contentPane.add(Clear_);
+		
+		JButton T2 = new JButton("Encrypt 2");
+		T2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				if (T2_) 
+				{
+					
+				}
+				else 
+				{
+					
+				}
+			}
+		});
+		T2.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T2.setBounds(340, 80, 148, 58);
+		contentPane.add(T2);
+		
+		JButton T1_1 = new JButton("Decrypt 1");
+		T1_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				if (T1_1_) 
+				{
+					
+				}
+				else 
+				{
+					
+				}
+			}
+		});
+		T1_1.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T1_1.setBounds(498, 12, 120, 58);
+		contentPane.add(T1_1);
+		
+		JButton T2_1 = new JButton("Decrypt 2");
+		T2_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				if (T2_1_) 
+				{
+					
+				}
+				else 
+				{
+					
+				}
+			}
+		});
+		T2_1.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T2_1.setBounds(498, 80, 120, 58);
+		contentPane.add(T2_1);
+		
+		JButton T3_1 = new JButton("Decrypt 3");
+		T3_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				if (T3_1_) 
+				{
+					
+				}
+				else 
+				{
+					
+				}
+			}
+		});
+		T3_1.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T3_1.setBounds(498, 144, 120, 58);
+		contentPane.add(T3_1);
+		
+		JButton T4_1 = new JButton("Decrypt 4");
+		T4_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				if (T4_1_) 
+				{
+					
+				}
+				else 
+				{
+					
+				}
+			}
+		});
+		T4_1.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+		T4_1.setBounds(499, 203, 119, 58);
+		contentPane.add(T4_1);
+	}
+}
